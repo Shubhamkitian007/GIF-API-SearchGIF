@@ -6,7 +6,7 @@ const showArea = document.querySelector('.showArea');
 var API_KEY = "xsxFQtFt2VSRgbDCUV2Qv9kzwlZW1YAm";
 button.addEventListener('click', ()=> {
     const gifName = inputText.value;
-    var url  = `http://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=${API_KEY}&limit=5`;
+    var url  = `https://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=${API_KEY}&limit=5`;
 
     var response = $.ajax(url, {
         type:'GET',
