@@ -13,7 +13,7 @@ button.addEventListener('click', ()=> {
         timeout:1000,
         data:'json',
         success: function(respo, status, xhr){
-            for(let i = 0;i < 5;i++){
+            for(let i = 0;i < 20;i++){
                 console.log(respo.data[i].images.downsized.url);
                 var displayImg = document.createElement('img');
                 displayImg.classList.add('gif');
